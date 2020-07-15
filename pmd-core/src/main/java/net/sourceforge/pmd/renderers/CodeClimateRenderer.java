@@ -81,6 +81,7 @@ public class CodeClimateRenderer extends AbstractIncrementingRenderer {
         issue.location = getLocation(rv);
         issue.remediation_points = getRemediationPoints();
         issue.categories = getCategories();
+        issue.fingerprint = rule.getName();
 
         switch (rule.getPriority()) {
         case HIGH:

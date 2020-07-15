@@ -19,6 +19,7 @@ public class CodeClimateIssue {
     public Location location;
     public String severity;
     public int remediation_points; // SUPPRESS CHECKSTYLE underscore is required per codeclimate format
+    public String fingerprint;
 
     public CodeClimateIssue() {
         type = "issue"; // the default type for PMD violations when reporting as code climate
